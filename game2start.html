@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム画面</title>
+    <style>
+        body {
+            background: #eee;
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: dodgerblue;
+            color: white;
+            font-size: 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+        .btn:hover {
+            background: #1e80ff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ジャンプゲーム</h1>
+
+<div class="btn" onclick="startGame()">ゲームスタート</div>
+
+
+<h2>スペースキーでジャンプ！</h2>
+
+<script>
+function startGame() {
+    window.location.href = "game2.html"; 
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    #countdown {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: red;
+        z-index: 999;
+        pointer-events: none;
+    }
+    
+    
+    #gameArea {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <title>Jump Game</title>
+    <style>
+        body { background: #eee; text-align: center; }
+
+        #gameArea {
+            width: 600px;
+            height: 200px;
+            background: white;
+            border: 2px solid #333;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #player {
+            width: 30px;
+            height: 30px;
+            background: dodgerblue;
+            position: absolute;
+            left: 50px;
+            bottom: 0;
+            border-radius: 5px;
+        }
+        #obstacle {
+            width: 30px;
+            height: 30px;
+            background: tomato;
+            position: absolute;
+            right: -40px;
+            bottom: 0;
+        }
+        #score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ジャンプで障害物を避けろ！</h1>
+<div id="score">スコア: 0</div>
+
+<!-- ★ カウントダウン表示追加！ -->
+<div id="countdown" style="
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    text-align: center;
+"></div>
+
+<div id="gameArea">
+    <div id="player"></div>
+    <div id="obstacle"></div>
+</div>
+
+<script src="game2.js"></script>
+
+</body>
+</html>
